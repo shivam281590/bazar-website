@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/fc10f6c4af.js" crossorigin="anonymous"></script>
+<!-- bootstrap icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ 
+<style>
+
+.addtocart{
+    visibility: hidden;
+    position: absolute;left: 0px;transition: 0.1s;cursor: pointer;color: gray;
+}
+.doller{
+    position: absolute;right:0px;transition: 0.3s;
+}
+.card:hover .doller{
+right:-60px;
+
+}
+.addtocart:hover{
+    color: black;
+}
+.card:hover .addtocart{
+
+    visibility: visible;
+    left: 40px;
+
+}
+.look{
+    position: absolute;bottom: -50px;visibility: hidden;transition: 0.3s;left: 30%;
+}
+.card:hover .look{
+    visibility: visible;
+    bottom: 0px;
+}
+.atocart{
+    color:gray;
+    cursor: pointer;
+}
+.atocart:hover{
+    color: black;
+}
+.sma{
+    left:-100px;
+    transition: 0.3s;
+}
+.scard:hover .sma{
+    left:0px;
+}
+
+#video{
+    display: none;justify-content: center;align-items: center;background-color: rgba(0, 0, 0, 0.73);position:fixed;
+    z-index: 100000;width: 100%; height:100%;
+}
+
+.blouse{
+    background-image:url('images/h1-product-9.jpg');background-position:100% 100%;background-size:100% 100%;
+}
+.seblouse{
+
+    display: none;
+
+}
+.blouse:hover .seblouse{
+    display:block ;
+}
+.blouse:hover{
+    background-size:105% 105%;
+}
+/* 2 */
+.blouset{
+    background-image:url('images/h1-product-10-768x768.jpg');background-position:100% 100%;background-size:100% 100%;
+}
+.seblouset{
+
+display: none;
+
+}
+.blouset:hover .seblouset{
+display:block ;
+}
+.blouset:hover{
+background-size:105% 105%;
+}
+/* 3 */
+.blouseth{
+    background-image:url('images/h1-product-11-768x768.jpg');background-position:100% 100%;background-size:100% 100%;
+}
+.seblouset{
+
+display: none;
+
+}
+.blouseth:hover .seblouset{
+display:block ;
+}
+.blouseth:hover{
+background-size:105% 105%;
+}
+/* 4 */
+.blousef{
+    background-image:url('images/h1-product-12-768x768.jpg');background-position:100% 100%;background-size:100% 100%;
+}
+.seblouset{
+
+display: none;
+
+}
+.blousef:hover .seblouset{
+display:block ;
+}
+.blousef:hover{
+background-size:105% 105%;
+}
+/* 5*/
+.blousefi{
+    background-image:url('images/h1-product-13-550x1100.jpg');background-position:100% 100%;background-size:100% 100%;
+}
+.seblouset{
+
+display: none;
+
+}
+.blousefi:hover .seblouset{
+display:block ;
+}
+.blousefi:hover{
+background-size:105% 105%;
+}
+/* footer */
+#t1, #t2, #t3, #t4,#t5{
+    
+    margin: 5px;
+}
+#t1:hover, #t2:hover, #t3:hover, #t4:hover,#t5:hover{
+    color: white;
+    cursor: pointer;
+}
+.op{
+    color:gray;
+}
+.op:hover{
+    color:white;
+    cursor: pointer;
+}
+.ha:hover{
+    opacity: 0.6;
+}
+.aya:hover{
+    color: black;cursor: pointer;
+}
+
+</style>
+
+
+
+
+</head>
+  <body style="overflow-x: hidden;">
+    
+  
+
+    
+   
+        <header style="padding: 20px 35px 20px 35px;background-color:white;color:black;width: 100%;top:0px;position: static;" id="headero">
+            <nav >
+                <div style="display: flex;">
+                    <div style="flex-grow: 2;">
+                        <img src="images/logo-dark.png" alt="" style="width:89px;height:19px;">
+                    </div>
+    
+                    <div style="flex-grow: 1;">
+                        <ul style="display: flex;list-style-type:none;">
+                            <li style="flex-grow: 2;"><a href="index.html" style="text-decoration: none;color:inherit">Home</a></li>
+                            <li style="flex-grow: 2;">Pages</li>
+                            <li style="flex-grow: 2;">Shop</li>
+                            <li style="flex-grow: 2;">Blog</li>
+                            <li style="flex-grow: 2;">Lookbook</li>
+                            <li style="flex-grow: 2;">Elements</li>
+                            <li style="flex-grow: 1;"><i class="fa-solid fa-bag-shopping"></i></li>
+                            <li style="flex-grow: 1;"><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li style="flex-grow: 1;"><img src="images/sidearea-opener.png" alt="" style="width: 16px;height:16px;"></li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </nav>
+        </header>
+
+        <content >
+
+            <div style="color: #fff;width: 100%;height:500px;">
+
+
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.82298597982!2d77.07234601507923!3d28.484877082476352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19174792f4db%3A0xcb5f589caa71b6e7!2sKnocial%20India%20Limited!5e0!3m2!1sen!2sin!4v1657520268995!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+
+            </div>
+
+          <div>
+            <div style="position:fixed;right: 0px;color:white;padding: 5px;background-color: red;top:460px;">
+                <svg x="0px" y="0px" viewBox="0 0 87 87" style="fill: #fff;height: 26px;">
+                    <path d="M55.4,81.5c6.1-11.1,5.2-16.1-4.3-24.3c6.1-3.5,9.5-8.5,9.1-15.7c-0.5-8.2-7.7-14.7-16.3-14.6
+                        c-8.5,0.1-15.6,6.7-15.9,15c-0.3,8.5,5.9,15.8,14.3,16.6c1.4,0.1,2.8,0.2,4.2,0.5c5.9,1.2,10.2,6.7,9.8,12.6
+                        c-0.4,6.4-5.5,11.4-11.8,11.7C24.9,84.2,5.9,68.5,3.2,49.3C-0.1,26.9,14.4,6.8,36.4,2.8c22.3-4,43.4,10,48.1,32
+                        c4.3,20-8.6,41.2-28.4,46.7C55.9,81.5,55.6,81.5,55.4,81.5z"></path>
+                </svg> <span style="margin-left: 10px;">RELATED</span>
+            </div>
+            <div style="position:fixed;right: 0px;color:red;padding: 5px 8px 5px 8px;background-color: white;top:505px;">
+                <i class="fa-solid fa-cart-shopping"></i> <span style="margin-left: 3px;color: black;">BUY NOW</span>
+            </div>
+            <div style="position:fixed;right: -30px;color:white;padding: 5px;top:600px;transform: rotate(-90deg);cursor: pointer;" id="aav">
+                <span style="margin-right: 10px;color: white;">Back to top</span><i class="fa-solid fa-right-long"></i> 
+            </div>
+            <div class="container">
+                <div class="row" style="height:auto;padding-top: 50px;padding-bottom: 50px;">
+                <div class="col-md-4" >
+                    
+                    <div style="padding-top: 10px;padding-bottom: 0px;">
+                        <div style="text-align: left;">
+                          <h1 style="font-family: 'Cedarville Cursive', cursive;color:gray">find and visit</h1>
+                          <h2 >our contact</h2>
+                          <div style="display: flex;justify-content:left;margin-top: 0px;">
+                              <div style="width: 15%;height:3px;background-color: black;"></div>
+                          </div>
+                          <p style="margin-top: 20px;color: gray;">Alierewnum phaedrum torquatos nec eu, dasvis <br> detraxit ertssa periculiser reex,nihil dexpetendis in mei <br> Meis an lorem tincidunt vixat, vele ax.</p>
+                      </div>
+                  </div>
+
+                  <ul type="none" style="padding: 0px;margin-top: 50px;color: gray;">
+                    <li style="margin-top: 15px;"><i class="fa-solid fa-building" style="margin-right: 10px;" ></i>Via S. Raffaele, 6, 20121 Milano</li>
+                    <li style="margin-top: 15px;"><i class="fa-solid fa-calculator" style="margin-right: 10px;"></i>Monday to Friday: 9am to 8pm</li>
+                    <li style="margin-top: 15px;cursor:pointer;"><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>bazzar@qodeinteractive.com</li>
+                  </ul>
+
+                  <ul type="none" style="display: flex;padding: 0px;margin-top: 50px;color: gray;">
+                    <li class="aya"><i class="fa-brands fa-twitter" style="margin-right: 10px;"></i></li>
+                    <li class="aya"><i class="fa-brands fa-instagram" style="margin-right: 10px;"></i></li>
+                    <li class="aya"><i class="fa-brands fa-facebook"></i></li>
+                  </ul>
+
+                </div>
+                <div class="col-md-8" style="padding-top: 20px;padding-bottom:20px;height: 600px;" >
+                    <input type="text" style="padding:20px;width: 100%;outline: none;margin-top: 10px;border:1px solid gray;" placeholder="Full Name">
+                    <input type="text" style="padding:20px;width: 100%;outline: none;margin-top: 10px;border:1px solid gray;" placeholder="Email Address">
+                    <input type="text" style="padding:20px;width: 100%;outline: none;margin-top: 10px;border:1px solid gray;" placeholder="Website">
+                    <textarea name="" id="" cols="30" rows="8" style="width: 100%;padding: 20px;margin-top: 10px;margin-bottom: 30px;outline: none;border:1px solid gray;" placeholder="Write a Comment..."></textarea>
+                    <a href="#" style="text-decoration: none;margin-top: 50px;background-color:black;color:white;padding: 15px 40px 15px 40px;">subscribe <span style="margin-left: 10px;"><i class="fa-solid fa-right-long"></i></span></a>
+                </div>
+            </div>
+            </div>
+
+
+
+
+          </div>
+
+
+
+
+
+          
+        </content>
+       
+
+
+
+
+     <!-- footer -->
+
+     <footer >
+
+        <div style="background-color: black;color:gray;padding-top: 100px;padding-bottom: 100px;">
+
+            <div class="container" style="display: flex;justify-content:space-between;">
+
+                <ul type="none" style="padding: 0px;">
+                    <li style="margin-bottom:20px;"><img src="images/logo-white (1).png" alt=""></li>
+                    <li class="op" style="margin-bottom:20px">© Qode Interactive</li>
+                    <li style="margin-bottom:20px"><img src="images/footer-img-2.png" alt="" style="width: 217px;cursor:pointer"></li>
+                    <li><i class="fa-brands fa-vimeo-v" id="t1"></i>
+                        <i class="fa-brands fa-instagram" id="t2"></i>
+                        <i class="fa-brands fa-twitter" id="t3"></i>
+                        <i class="fa-brands fa-facebook" id="t4"></i>
+                        <i class="fa-brands fa-tumblr" id="t5"></i>
+                    </li>
+
+
+                </ul>
+
+                <ul type="none" style="padding: 0px;">
+                    <li style="margin-bottom:20px;color: white;"><h4>locate us</h4></li>
+                    <li  style="margin-bottom:10px">28 Bartholomeo street, NY, NY</li>
+                    <li style="margin-bottom:10px">phone: 0035 265 244 58</li>
+                    <li style="margin-bottom:10px">phone: 0035 244 58 265
+                    </li>
+                    <li style="margin-bottom:10px">e-mail: bazzar@example.com
+                    </li>
+
+
+                </ul>
+
+
+                <ul type="none" style="padding: 0px;">
+                    <li class="op" style="margin-bottom:20px;color: white;"><h4>profile</h4></li>
+                    <li class="op" style="margin-bottom:10px"><span style="margin-right: 10px;"><i class="fa-solid fa-user"></i></span>  my account</li>
+                    <li class="op" style="margin-bottom:10px"><span style="margin-right: 10px;"><i class="fa-solid fa-magnifying-glass"></i></span>checkout</li>
+                    <li class="op" style="margin-bottom:10px"><span style="margin-right: 10px;"><i class="fa-solid fa-house"></i></span>order tracking
+                    </li>
+                    <li class="op" style="margin-bottom:10px"><span style="margin-right: 10px;"><i class="fa-solid fa-location-dot"></i></span>help & support
+                    </li>
+
+
+                </ul>
+
+
+                <ul type="none" style="padding: 0px;margin-top: 40px;">
+                
+                    <li>
+                        <div style="padding: 20px;width:250px; display: flex;justify-content: space-between;border: 1px solid white;"><span><input type="text" style="width: 40%;border:none;outline:none;background-color: transparent;color: white;" placeholder="e-mail"></span><span style="color: white;">subscribe</span></div>
+                    </li>
+                
+                </ul>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+     </footer>
+
+     <script>
+
+        var header=document.getElementById("headero");
+        window.addEventListener('scroll',function(){
+
+            if(window.pageYOffset>200){
+                header.style.position="fixed";
+                header.style.zIndex="1000000";
+                header.style.transitionProperty="position"
+                header.style.transition="2s";
+            }
+            else if(window.pageYOffset<200){
+                header.style.position="static";
+                header.style.transition="2s";
+            }
+
+        });
+
+
+        var aav=document.getElementById("aav");
+        aav.addEventListener('click',function(){
+
+            window.scrollTo(0,0);
+
+        });
+
+
+        // slider2
+
+        var le=document.getElementById("left");
+        var ri=document.getElementById("right");
+        var slider=document.getElementById("slider");
+        
+        le.addEventListener('click', function(){
+            var val=slider.style.left.split("px");
+        let mvalue=parseInt(val);
+
+        console.log(mvalue);
+
+        if(mvalue!=0){
+            mvalue+=800;
+            slider.style.left=`${mvalue}px`;
+
+        }
+
+            
+
+        });
+        ri.addEventListener('click', function(){
+            var val=slider.style.left.split("px");
+        let mvalue=parseInt(val);
+
+        if(mvalue!=-2400){
+            mvalue-=800;
+            slider.style.left=`${mvalue}px`;
+
+        }
+
+            
+
+        });
+
+     </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

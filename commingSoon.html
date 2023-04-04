@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/fc10f6c4af.js" crossorigin="anonymous"></script>
+<!-- bootstrap icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ 
+<style>
+
+.addtocart{
+    visibility: hidden;
+    position: absolute;left: 0px;transition: 0.1s;cursor: pointer;color: gray;
+}
+.doller{
+    position: absolute;right:0px;transition: 0.3s;
+}
+.card:hover .doller{
+right:-60px;
+
+}
+.addtocart:hover{
+    color: black;
+}
+.card:hover .addtocart{
+
+    visibility: visible;
+    left: 40px;
+
+}
+.look{
+    position: absolute;bottom: -50px;visibility: hidden;transition: 0.3s;left: 30%;
+}
+.card:hover .look{
+    visibility: visible;
+    bottom: 0px;
+}
+.atocart{
+    color:gray;
+    cursor: pointer;
+}
+.atocart:hover{
+    color: black;
+}
+.sma{
+    left:-100px;
+    transition: 0.3s;
+}
+.scard:hover .sma{
+    left:0px;
+}
+
+#video{
+    display: none;justify-content: center;align-items: center;background-color: rgba(0, 0, 0, 0.73);position:fixed;
+    z-index: 100000;width: 100%; height:100%;
+}
+
+.blouse{
+    background-image:url('images/h1-product-9.jpg');background-position:100% 100%;background-size:100% 100%;
+}
+.seblouse{
+
+    display: none;
+
+}
+.blouse:hover .seblouse{
+    display:block ;
+}
+.blouse:hover{
+    background-size:105% 105%;
+}
+/* 2 */
+.blouset{
+    background-image:url('images/h1-product-10-768x768.jpg');background-position:100% 100%;background-size:100% 100%;
+}
+.seblouset{
+
+display: none;
+
+}
+.blouset:hover .seblouset{
+display:block ;
+}
+.blouset:hover{
+background-size:105% 105%;
+}
+/* 3 */
+.blouseth{
+    background-image:url('images/h1-product-11-768x768.jpg');background-position:100% 100%;background-size:100% 100%;
+}
+.seblouset{
+
+display: none;
+
+}
+.blouseth:hover .seblouset{
+display:block ;
+}
+.blouseth:hover{
+background-size:105% 105%;
+}
+/* 4 */
+.blousef{
+    background-image:url('images/h1-product-12-768x768.jpg');background-position:100% 100%;background-size:100% 100%;
+}
+.seblouset{
+
+display: none;
+
+}
+.blousef:hover .seblouset{
+display:block ;
+}
+.blousef:hover{
+background-size:105% 105%;
+}
+/* 5*/
+.blousefi{
+    background-image:url('images/h1-product-13-550x1100.jpg');background-position:100% 100%;background-size:100% 100%;
+}
+.seblouset{
+
+display: none;
+
+}
+.blousefi:hover .seblouset{
+display:block ;
+}
+.blousefi:hover{
+background-size:105% 105%;
+}
+/* footer */
+#t1, #t2, #t3, #t4,#t5{
+    
+    margin: 5px;
+}
+#t1:hover, #t2:hover, #t3:hover, #t4:hover,#t5:hover{
+    color: white;
+    cursor: pointer;
+}
+.op{
+    color:gray;
+}
+.op:hover{
+    color:white;
+    cursor: pointer;
+}
+.ha:hover{
+    opacity: 0.6;
+}
+
+</style>
+
+
+
+
+</head>
+  <body style="overflow:hidden;">
+    
+  
+
+    
+   
+        
+
+        <content >
+
+            <div style="color: #fff;width: 100%;height:760px;background-image:url('images/coming-soon.jpg');background-position:100% 100%;background-size:100% 100%;background-attachment: fixed;display: flex;justify-content: center;flex-direction: column;">
+                <header style="padding: 20px 35px 20px 35px;background-color:transparent;color:black;position: absolute;width: 100%;top:0px;">
+                    <nav >
+                        <div style="display: flex;">
+                            <div style="flex-grow: 2;">
+                                <img src="images/logo-dark.png" alt="" style="width:89px;height:19px;">
+                            </div>
+            
+                            <div style="flex-grow: 1;">
+                                <ul style="display: flex;list-style-type:none;">
+                                    <li style="flex-grow: 2;"><a href="index.html" style="text-decoration: none;color:inherit">Home</a></li>
+                                    <li style="flex-grow: 2;">Pages</li>
+                                    <li style="flex-grow: 2;">Shop</li>
+                                    <li style="flex-grow: 2;">Blog</li>
+                                    <li style="flex-grow: 2;">Lookbook</li>
+                                    <li style="flex-grow: 2;">Elements</li>
+                                    <li style="flex-grow: 1;"><i class="fa-solid fa-bag-shopping"></i></li>
+                                    <li style="flex-grow: 1;"><i class="fa-solid fa-magnifying-glass"></i></li>
+                                    <li style="flex-grow: 1;"><img src="images/sidearea-opener.png" alt="" style="width: 16px;height:16px;"></li>
+                                </ul>
+                            </div>
+            
+                        </div>
+                    </nav>
+                </header>
+                <div style="text-align: center;">
+                    <h1 style="font-family: 'Cedarville Cursive', cursive;color:gray">that's how is</h1>
+                    <h2 style="color: black;">website coming soon</h2>
+                    <div style="display: flex;justify-content:center;margin-top: 15px;">
+                        <div style="width: 5%;height:3px;background-color: black;"></div>
+                    </div>
+                    
+                </div>
+
+                <div style="display: flex;justify-content:center;">
+                <div style="width:65%;display: flex;border: 1px solid red;margin-top: 20px;">
+                    <div style="color:black;flex-grow: 1;text-align: center;">
+                        <h1 style="font-weight: 700;">01</h1>
+                        <span style="color:gray;">month</span>
+
+                    </div>
+                    <div style="color:black;flex-grow: 1;text-align: center;">
+                        <h1 style="font-weight: 700;">01</h1>
+                        <span style="color:gray;">month</span>
+
+                    </div>
+                    <div style="color:black;flex-grow: 1;text-align: center;">
+                        <h1 style="font-weight: 700;">08</h1>
+                        <span style="color:gray;">days</span>
+
+                    </div>
+                    <div style="color:black;flex-grow: 1;text-align: center;">
+                        <h1 style="font-weight: 700;">22</h1>
+                        <span style="color:gray;">hours</span>
+
+                    </div>
+                    <div style="color:black;flex-grow: 1;text-align: center;">
+                        <h1 style="font-weight: 700;">01</h1>
+                        <span style="color:gray;">minutes</span>
+
+                    </div>
+                    <div style="color:black;flex-grow: 1;text-align: center;">
+                        <h1 style="font-weight: 700;">45</h1>
+                        <span style="color:gray;">seconds</span>
+
+                    </div>
+                
+                </div>
+            </div>
+
+            <div style="display: flex;justify-content:center;margin-top:60px;">
+                    <div style="display: flex;justify-content:space-between;width: 70%;">
+                        <input type="text" style="padding: 12.5px;width: 83%;">
+                        <a href="#" style="text-decoration: none;width: 15%;background-color:black;color:white;padding: 15px 15px 15px 15px;text-align: center;">subscribe </a>
+                    </div>
+                    
+            </div>
+
+            <div style="margin-top: 60px;">
+                <div style="text-align: center;">
+                    <h6 style="color: black;">we are awesome folow us</h6>
+                    <div style="color: gray;">
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+           
+
+        </content>
+
+     <script>
+
+
+        var aav=document.getElementById("aav");
+        aav.addEventListener('click',function(){
+
+            window.scrollTo(0,0);
+
+        });
+
+
+        // slider2
+
+        var le=document.getElementById("left");
+        var ri=document.getElementById("right");
+        var slider=document.getElementById("slider");
+        
+        le.addEventListener('click', function(){
+            var val=slider.style.left.split("px");
+        let mvalue=parseInt(val);
+
+        console.log(mvalue);
+
+        if(mvalue!=0){
+            mvalue+=800;
+            slider.style.left=`${mvalue}px`;
+
+        }
+
+            
+
+        });
+        ri.addEventListener('click', function(){
+            var val=slider.style.left.split("px");
+        let mvalue=parseInt(val);
+
+        if(mvalue!=-2400){
+            mvalue-=800;
+            slider.style.left=`${mvalue}px`;
+
+        }
+
+            
+
+        });
+
+     </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
